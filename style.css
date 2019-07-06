@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+}
+
+/* chama a classe da section 
+e a divide em duas partes, através do grid, 
+1° parte para o texto e input do email / a 2° parte para o video */
+.feedback{
+    background-color: darkgray;
+    display: grid;
+    grid-template-columns: 54vw 46vw;
+    grid-gap: 10vh;
+    align-items: center;
+    padding: 30px;
+}
+
+/* chama a classe da div 
+que esta dentro da section, para aumentar a distancia
+na parte esquerda */
+.email{
+    background-color: red;
+    padding-left: 90px;
+}
