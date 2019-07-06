@@ -2,6 +2,58 @@ body{
     margin: 0;
 }
 
+/*estilização da section*/
+.apresentação{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 40vh;
+}
+
+/*estilização de todos os h4 na section*/
+.apresentação h4{
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+/*estilização de todas as divs*/
+.engrenagem, .estrela, .globo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    text-align: center;
+    padding-left: 100px;
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+}
+
+/*alteração dos textos presentes nas divs*/
+.textos1{
+    margin: 0px;
+    line-height: 25px;
+}
+
+/*estilização do fundo dos icones das divs*/
+.fundois1{
+    height: 80px;
+    width: 80px;
+    background-color: #2dcc70;
+    background-size: 100px;
+    border-radius: 100px;
+}
+
+/*alterações nos icones*/
+.is1{
+    height: 35px;
+    width: 35px;
+    padding-top: 22px;
+}
+
+
 /* chama a classe da section 
 e a divide em duas partes, através do grid, 
 1° parte para o texto e input do email / a 2° parte para o video */
@@ -25,14 +77,14 @@ input{
     height: 30px;
 }
 
-/* troca a cordo rodape e deixa os links flexiveis */
+/* troca a cor do rodape e deixa os links flexiveis */
 footer{
     background-color: darkgray;
     display: flex;
     justify-content: center;
 }
 
-/* tira a linha dos linkis e aumenta a distância entre eles */
+/* tira a linha dos links e aumenta a distância entre eles */
 footer a{
     text-decoration: none;
     padding: 20px;
