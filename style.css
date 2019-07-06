@@ -18,6 +18,22 @@ e a divide em duas partes, através do grid,
 que esta dentro da section, para aumentar a distancia
 na parte esquerda */
 .email{
-    background-color: red;
     padding-left: 90px;
+}
+
+input{
+    height: 30px;
+}
+
+/* troca a cordo rodape e deixa os links flexiveis */
+footer{
+    background-color: darkgray;
+    display: flex;
+    justify-content: center;
+}
+
+/* tira a linha dos linkis e aumenta a distância entre eles */
+footer a{
+    text-decoration: none;
+    padding: 20px;
 }
