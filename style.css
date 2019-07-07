@@ -1,24 +1,131 @@
-body{
-display: grid;
-grid-template-areas: 'navbar navbar navbar navbar'
-                    'header header header header'
-                    'section section section section'
-                    'section section section section'
-                    'section section section section'
-                    'footer footer footer footer';
-grid-template-rows: 5vh 99vh 76vh 80vh 76vh 20vh;
-margin: 0px;
+    display-grid {
+    grid-template-areas: 'nav nav nav'
+                        'header header header header'
+                        'apresentacao apresentacao apresentacao apresentacao'
+                        'feedback feedback feedback feedback'
+                        'depoimentos depoimentos depoimentos depoimentos'
+                        'footer footer footer footer';
+    grid-template-rows: 5vh 99vh 76vh 80vh 76vh 20vh;
+    grid-template-columns: 33vw 33vw 33.5vw;
+    font-family: 'Lato', sans-serif;
+    margin: 0px;
 
 }
 
-.navbar{
-grid-area: navbar;    
-background-color:#2cfb60;
+nav{
+    grid-area: nav;
+    background-color: #2dcc70
+}
+ header{
+     background-image: url('img/banner.png');
+     grid-area: header;
+ }
+
+/*estilização da section*/
+.apresentação{
+    grid-area: apresentacao;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    /* width: 100vw;
+    height: 40vh; Nao foi mais necrssatio colocar, pq a largira e altura da section
+    foi denominada no body através da grid */
 }
 
-.header{
-    background-image: url("img/banner.png");
-    grid-area: header;
+/*estilização de todos os h4 na section*/
+.apresentação h4{
+    font-size: 20px;
+    /* margin-bottom: 18px; */
+}
 
+/*estilização de todas as divs*/
+.engrenagem, .estrela, .globo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* width: 300px; */
+    text-align: center;
+    padding: 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+}
+
+/*alteração noespacamento dos textos presentes nas divs*/
+p{
+    line-height: 30px;
+}
+
+/*estilização do fundo dos icones das divs*/
+.fundois1{
+    height: 80px;
+    width: 80px;
+    background-color: #2dcc70;
+    background-size: 100px;
+    border-radius: 100px;
+}
+
+/*alterações nos icones*/
+.is1{
+    height: 35px;
+    width: 35px;
+    padding-top: 22px;
+} 
+
+
+/* chama a classe da section 
+e a divide em duas partes, através do grid, 
+1° parte para o texto e input do email / a 2° parte para o video */
+.feedback{
+    grid-area: feedback;
+    background-color: darkgray;
+    display: grid;
+    grid-template-columns: 54vw 46vw;
+    grid-gap: 15vh;
+    align-items: center;
+}
+
+/* chama a classe da div 
+que esta dentro da section, para aumentar a distancia
+na parte esquerda */
+.email{
+    padding-left: 90px;
+}
+
+input{
+    padding: 15px;
+    width: 40%;
+    border-radius: 5px;
+}
+input[type=submit]{
+    background-color: #2dcc70;  
+    width: 20%;
+    color: white;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
 
 }
+
+.depoimentos{
+    grid-area: depoimentos;
+    background-color: black;
+}
+
+/* troca a cor do rodape e deixa os links flexiveis */
+footer{
+    grid-area: footer;
+    background-color: darkgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* tira a linha dos links e aumenta a distância entre eles */
+footer a{
+    
+    text-decoration: none;
+    padding: 20px;
+}
+>>>>>>> 4ad926f8f17eb1cceb0560659167ae5bf6944b96

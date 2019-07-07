@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href='style.css'>
     <title>Melhor App- Notify</title>
-   
+
 </head>
+
 <body>
     <!--MARGEM VERDE INICIAL 1-->
     <nav class= 'navbar'></nav>
-   
-    <!--FUNDO IMAGEM 2
-    <header>
-        <div class="home imagem de fundo">
-           <img src="img/banner.png" alt="">
-        </div>
-     -->
         <!--MÃO IMAGEM 2-->
         <div class="imagem mao">
             <img src="img/hand.png" alt="">
@@ -25,32 +21,146 @@
 
         <!--TEXTO INICIAL 2-->
         <!--TEXTO PRINCIPAL 2-->
-        <div class="conteudo texto">
-            
+        <div class="conteudoTexto">
             <div class="titulo">
                 <h1> Notify
-                        <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
-                        <p class="ponto verde">.</p>
+                    <p class="pontoVerde">.</p>
                 </h1>
-                
                 <!--TEXTO INFERIOR 2-->
-                    <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     <br>Porro voluptates facere nulla sit quam magnam,
-                    <br> assumenda officia suscipit quasi quaerat impedit 
+                    <br> assumenda officia suscipit quasi quaerat impedit
                     <br> exercitationem fuga deleniti aut natus quo eligendi dolore vel?</h3>
-
             </div>
-                <!--BARRA ICONES 2-->
-            <div class="barra de icones">
-                    <img class="ios" src="img/icone-ios.png" alt="">
-                    <img class="android" src="img/icone-android.png" alt="">
-                    <img class="icone-windows" src="img/icone-windows.png" alt="">
+            <!--BARRA ICONES 2-->
+            <div class="barraIcones">
+                <img class="ios" src="img/icone-ios.png" alt="">
+                <img class="android" src="img/icone-android.png" alt="">
+                <img class="icone-windows" src="img/icone-windows.png" alt="">
             </div>
         </div>
+        <!--MÃO IMAGEM 2-->
+        <div class="imagemMao">
+            <img src="img/hand.png" alt="">
+        </div>
     </header>
-    <section></section>
-    <section></section>
-    <section></section>
-    <footer></footer>
+
+    <!-- separando cada parte da section por divs que vão ficar uma do lado da outra com display flex-->
+    <section class="apresentação">
+        <div class="engrenagem">
+            <div class="fundois1"> <img class="is1" src="img/icone1.png" alt=""> </div>
+            <h4>Editable Theme</h4>
+            <p class="textos1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla.
+            </p>
+        </div>
+        <div class="estrela">
+            <div class="fundois1"> <img class="is1" src="img/icone2.png" alt=""> </div>
+            <h4>Flat Design</h4>
+            <p class="textos1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla.
+            </p>
+        </div>
+        <div class="globo">
+            <div class="fundois1"> <img class="is1" src="img/icone3.png" alt=""> </div>
+            <h4>Reach Your Audience</h4>
+            <p class="textos1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla.
+            </p>
+        </div>
+    </section>
+
+    <!-- section com uma div (para o texto e o input do email)
+         e com uma img para o video -->
+    <section class="feedback">
+        <div class="email">
+            <h3>Get Notfied Of Any Updates!</h3>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita doloremque alias assumenda amet
+                perferendis libero quod magnam maxime dignissimos exercitationem commodi deserunt ipsam perspiciatis
+                necessitatibus, ipsa ut dolor cum culpa.
+            </p>
+            <div>
+                <input type="email" placeholder="Email Adress">
+                <input type="submit" value="Notify">
+            </div>
+        </div>
+        <img src="img/video.png" alt="">
+    </section>
+
+    <!-- section dividida com várias divs para cada parte de conteúdo -->
+    <section class="depoimentos">
+        <div class="fala">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae
+                nulla molestie eu commodo nulla dapib us. Donec id sollicitudin uma. Interger at dui
+                ac leo fermentum varius eleifend ut."</p>
+        </div>
+
+        <div class="nome">
+            <h5>Doggo</h5>
+        </div>
+
+        <div class="fotos">
+            <!-- <img src="img/doge.jpg" alt="">
+            <img src="img/doge.jpg" alt="">
+            <img src="img/doge.jpg" alt="">
+            <img src="img/doge.jpg" alt="">
+            <img src="img/doge.jpg" alt="">
+            <img src="img/doge.jpg" alt=""> -->
+            <!-- <img src="img/doge.jpg" alt="">
+            <img src="img/doge.jpg" alt="">
+            <img src="img/doge.jpg" alt="">
+            <img src="img/doge.jpg" alt="">
+            <img src="img/doge.jpg" alt="">
+            <img src="img/doge.jpg" alt="">
+            <img src="img/doge.jpg" alt="">
+            <img src="img/doge.jpg" alt="">
+            <img src="img/doge.jpg" alt="">
+            <img src="img/doge.jpg" alt="">
+            <img src="img/doge.jpg" alt="">
+            <img src="img/doge.jpg" alt="">
+            <img src="img/doge.jpg" alt="">
+            <img src="img/doge.jpg" alt=""> -->
+        </div>
+
+        <div class="sayhi">
+                <h3>Say Hi & Get in Touch</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse.</p>
+        </div>
+
+        <div class="redes-sociais">
+            <div class="twitter">
+                <div class="fundois3"> <img class="is3" src="" alt=""></div>
+            </div>
+
+            <div class="facebook">
+                <div class="fundois3"> <img class="is3" src="" alt=""></div>
+            </div>
+
+            <div class="pinterest">
+                <div class="fundois3"> <img class="is3" src="" alt=""></div>
+            </div>
+
+            <div class="googleplus">
+                <div class="fundois3"> <img class="is3" src="" alt=""></div>
+            </div>
+
+            <div class="linkedin">
+                <div class="fundois3"> <img class="is3" src="" alt=""></div>
+            </div>
+
+            <div class="youtube"></div>
+                <div class="fundois3"> <img class="is3" src="" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- rodape com links adicionados -->
+    <footer>
+        <a href="#">Contact</a>
+        <a href="#">Download</a>
+        <a href="#">Press</a>
+        <a href="#">Email</a>
+        <a href="#">Support</a>
+        <a href="#">Privacy Policy</a>
+    </footer>
 </body>
+
 </html>
