@@ -1,0 +1,24 @@
+body{
+display: grid;
+grid-template-areas: 'navbar navbar navbar navbar'
+                    'header header header header'
+                    'section section section section'
+                    'section section section section'
+                    'section section section section'
+                    'footer footer footer footer';
+grid-template-rows: 5vh 99vh 76vh 80vh 76vh 20vh;
+margin: 0px;
+
+}
+
+.navbar{
+grid-area: navbar;    
+background-color:#2cfb60;
+}
+
+.header{
+    background-image: url("img/banner.png");
+    grid-area: header;
+
+
+}
