@@ -8,7 +8,7 @@ body{
     'depoimentos depoimentos depoimentos depoimentos'
     'footer footer footer footer';
     grid-template-rows: 5vh 99vh 76vh 80vh 76vh 15vh;
-    grid-template-columns: 33vw 33vw 33.5vw;
+    grid-template-columns: 25vw 25vw 25vw 25vw;
     font-family: 'Lato', sans-serif;
     margin: 0px;
     
@@ -39,13 +39,15 @@ body{
 
 }
 
+
 /*IMAGEM MÃO*/
 .mao{
-    height:400px; 
-    right:150px;
-    top:100px;
-    position: absolute;
-   
+    height:700px;
+    right: 100px;
+    top:90px;
+    position: relative; left:810px; top:96px;
+
+    
 }
 
 /*FUNDO IMAGEM*/
